@@ -1,29 +1,72 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
-  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 40px;
 }
 
 .header {
-  height: 72px;
+  height: 8vh;
   background: darkmagenta;
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-
-.footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
+.header h1 {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 15px;
+  margin: 0;
+  padding: 10px;
 }
-
-.sidebar {
-  width: 300px;
-  background: royalblue;
-  box-sizing: border-box;
+.main-content {
+  display: flex;
+  width: 100%;
+  gap: 12px;
 }
-
+.sidebar-left {
+  width: 20%;
+  background-color: rgb(53, 112, 230);
+}
+.sidebar-left ul{
+  list-style: none;
+  margin: 10px;
+  padding: 0px;
+}
+.sidebar-left li {
+  margin-bottom: 10px;
+}
+.sidebar-left a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+.sidebar-right {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+}
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 30%;
+  height: 36vh;
+  font-size: 10px;
+  padding: 10px;
+  font-weight: 600;
 }
+.footer {
+  background: #eee;
+  color: darkmagenta;
+  height: 5vh;
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+  font-weight: 600;
+}
+
